@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>
+Generate a Random Password using javascript
+</title>
+
+</head>
+
+<body style = "text-align:center;">
+
+<h1 style = "color: Red">
+Made By Maaz Siddiqui Discord Username:RoDev#7681
+</h1>
+
+<h2 style = "color: Red">
+Hello Everyone, I suggest everyone using this website for password generate, because there are so many people that their account are getting hacked and stuff so I suggest to use this for creating the most hard password for your account!
+</h1>
+
+<h3>
+Click on the button to generate random Password.
+</h3>
+
+<button onclick = "b2d_run()">
+Click Here
+</button>
+
+<p id="b2dpass"></p>
+
+<script>
+
+var pass_gen = document.getElementById("b2dpass");
+function b2d_run() {
+pass_gen.innerHTML = Math.random().toString(36).slice(2) + Math.random().toString(36).toUpperCase().slice(2);
+}
+
+
+</script>
+</body>
+
+
+</html>
